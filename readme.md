@@ -5,12 +5,6 @@
 非常感谢`Moe`大佬、团队制作了`Restful`风格接口插件，让这个构建方案得以实现
 [moefront/typecho-plugin-Restful](https://github.com/moefront/typecho-plugin-Restful)
 
-## 缺点
-
-致命缺点：对于一个博客站点而言，使用服务器端渲染的方案，对`SEO`是友好的，`SPA`方案应当受到摒弃，前提是你的博客文章非常优质，那么我并不推荐你使用`Yuna`进行主题开发。
-
-但是从项目层面去考虑，作为一个小型的程序，`SPA`的体验非常优秀，并且使用`vue.js`取代`jQuery`不香吗？清晰的、可维护、易迭代的代码不香吗？
-
 ## 快速开始
 
 - 确保已经安装了`node`环境以及`npm`包管理工具
@@ -18,6 +12,7 @@
 - 使用`git clone`命令、打包下载，将项目克移动到`typecho/usr/theme`目录中，执行`npm install`
 
 - 下载并安装 [moefront/typecho-plugin-Restful](https://github.com/moefront/typecho-plugin-Restful) 插件，开启`typecho`后端`Restful`接口
+
 
 > 如果依赖安装速度非常慢，推荐国内开发者为`npm`配置淘宝镜像、`cnpm`、当然`yarn`也是非常好的选择
 
@@ -64,14 +59,24 @@ npm run dev
 npm run build
 ```
 
+> 别忘了后台启用主题
+
 ## 版本管理
 
 `themeConfig.js`中的`ver`属性，可以帮助你在创造不同版本的主题的时候，进行版本的管理，默认为`1.0`，如果你打算进行`1.0.1`版本的开发，那么就修改成`1.0.1`，在主题文件夹类就会生成`1.0`、`1.0.1`两个文件夹
 
 > 当然你可以忽略它，使用`git`的进行分支、版本管理
 
+## 缺点
+
+致命缺点：对于一个博客站点而言，使用服务器端渲染的方案，对`SEO`是友好的，`SPA`方案应当受到摒弃，前提是你的博客文章非常优质，那么我并不推荐你使用`Yuna`进行主题开发。
+
+但是从项目层面去考虑，作为一个小型的程序，`SPA`的体验非常优秀，并且使用`vue.js`取代`jQuery`不香吗？清晰的、可维护、易迭代的代码不香吗？
+
 ## 额外说明
 
 - 图片压缩：脚手架默认使用了`Base64`压缩图片的方案
 
 - 网站图标：`/public/favicon.ico`是由`HtmlWebpackPlugin`插件模板引擎自动注入到`index.php`中，所以如果你需要修改默认的`favicon.ico`，请替换你喜欢的`ico`文件
+
+- 主题图片：在主题文件夹中，放入`screenshot.png`
