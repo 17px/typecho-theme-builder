@@ -17,6 +17,8 @@
 
 - 使用`git clone`命令、打包下载，将项目克移动到`typecho/usr/theme`目录中，执行`npm install`
 
+- 下载并安装 [moefront/typecho-plugin-Restful](https://github.com/moefront/typecho-plugin-Restful) 插件，开启`typecho`后端`Restful`接口
+
 > 如果依赖安装速度非常慢，推荐国内开发者为`npm`配置淘宝镜像、`cnpm`、当然`yarn`也是非常好的选择
 
 ## 结构
