@@ -2,10 +2,7 @@
 export default {
   getPages: async d => {
     let pagesList = [];
-    for (let item of d) {
-      let p = await Request("/api/post", { cid: item.cid });
-      pagesList.push(p.data);
-    }
+    for (let item of d) if (item) pagesList.push(item);
     return pagesList;
   }
 };
